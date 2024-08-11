@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #b1bfd8;
+    background-image: linear-gradient(360deg, #b9bcbe 0%, #171b21 74%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.game-container {
+    width: 80%;
+    max-width: 900px;
+}
+
+.title {
+    background: white;
+    margin: 1rem 0;
+    padding: .5rem 0;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+}
+
+.game {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 8px solid white;
+    padding: 2rem;
+    text-align: center;
+    height: 300px;
+}
+
+.game img {
+    width: 140px;
+    height: 140px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+h1 {
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 2rem;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.img {
+    width: 110px;
+    height: 110px;
+    padding: .5rem;
+    margin: 0 1rem;
+    border-radius: 50%;
+    border: .4rem solid black;
+    cursor: pointer;
+    transition: background .3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.img:hover {
+    background: black;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+}
+
+.result {
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 200px;
+}
+
+.game h4 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+/* Responsiveness  */
+
+@media screen and (max-width: 1200px) {
+    .game-container {
+        width: 90%;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .game {
+        height: 250px;
+    }
+
+    .game img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .choices {
+        margin-top: 0.5rem;
+    }
+
+    .img {
+        width: 100px;
+        height: 100px;
+        margin: 0 0.5rem;
+    }
+
+    .result {
+        font-size:2.5rem;
+    }
+
+    .game h4 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .game-container {
+        width: 95%;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .game {
+        flex-direction: row;
+        height: auto;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .game img {
+        width: 120px;
+        height: 120px;
+        margin: 1rem 0;
+    }
+
+    .choices {
+        display: flex;
+       
+        margin-top: 1rem;
+    }
+
+    .img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .result {
+        font-size: 2.5rem;
+        width: 180px;
+    }
+
+    .game h4 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .game-container {
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .game img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .choices {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .img {
+        width: 100px;
+        height: 100px;
+        margin: 0.5rem;
+    }
+
+    .result {
+        font-size: 1.5rem;
+        width: 120px;
+    }
+
+    .game h4 {
+        font-size: 1rem;
+    }
+}
